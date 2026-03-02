@@ -1,0 +1,151 @@
+.resume-wrapper {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 40px;
+  background: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Header Styles */
+.resume-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.header-left {
+  display: flex;
+  gap: 25px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.header-info h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  color: #777;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.contact-grid a { color: #3498db; text-decoration: none; }
+
+/* Buttons */
+.header-actions { display: flex; gap: 10px; }
+.btn-share, .btn-download {
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-download { background: #27ae60; color: white; border: none; }
+
+/* Body Layout */
+.resume-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+}
+
+h3 {
+  font-size: 1rem;
+  color: #444;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Skills Progress Bars */
+.skill-item { margin-bottom: 15px; }
+.skill-item label { font-size: 0.85rem; display: block; margin-bottom: 5px; }
+.progress-bar {
+  background: #f0f0f0;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.progress-fill { height: 100%; transition: width 1s ease-in-out; }
+
+/* Experience styling */
+.experience-item { margin-bottom: 20px; }
+.exp-header { display: flex; justify-content: space-between; }
+.company { color: #3498db; font-weight: bold; }
+
+
+
+.action-bar {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.share-container {
+  position: relative;
+}
+
+.share-options {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.project-item {
+  margin-bottom: 15px;
+}
+
+.project-item strong {
+  display: block;
+  color: #2c3e50;
+  font-size: 1.05rem;
+}
+
+.project-item p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+.skill-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-list li {
+  background: #f8f9fa;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  border-left: 3px solid #3498db;
+}
